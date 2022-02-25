@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+    padding:30px 0;
+}
+.header,.content,.footer{
+    background-color: black;
+    padding: 20px;
+}
+
+
+.header-top{
+    background-color: darkslateblue;
+    padding: 15px;
+    display: flex;
+}
+.header-top > div{
+    height: 10px;
+    margin: 0 5px;
+    background-color: rgb(254, 116, 66);
+    flex:1;
+}
+
+.header-top > .h-scnd{
+    flex: 4;
+}
+
+.header-down{
+    background-color: rgb(230, 124, 30);
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.header-down > div{
+    height: 10px;
+    background-color: rgb(235, 220, 136);
+}
+
+.content{
+    display: flex;
+    margin-top: 20px;
+   
+}
+
+.content-body{
+    background-color: rgb(70, 70, 126);
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+   
+}
+
+.c-frst, .c-scnd{
+    display: flex;
+}
+
+.c-frst > div, .c-scnd > div, .c-thrd > div{
+   height: 10px;
+   flex: 1;
+   margin: 5px;
+  
+}
+.c-frst > div, .c-scnd > div{
+    background-color: rgb(5, 63, 125);
+}
+.c-thrd > div{
+    background-color: rgb(47, 119, 196);
+}
+
+aside{
+    background-color: rgb(232, 39, 68);
+    padding:15px;
+    margin-left: 10px;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside > div{
+    height: 10px;
+    background-color: rgb(223, 223, 172);
+    margin: 5px 0;
+}
+
+.footer{
+    margin-top: 20px;
+}
+
+.footer > div{
+   height: 10px;
+   background-color: antiquewhite;
+}
+
+
+@media screen and (max-width:768px){
+    .content{
+        background-color: yellow;
+        flex-direction: column;
+    }
+    aside{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width:424px){
+   .header-top{
+       flex-direction: column;
+    }
+
+    .header-top > div{
+        margin: 10px 0;
+       
+        flex: none;
+    }
+
+    .header-top > .h-scnd{
+        flex: none;
+    }
+    .c-frst, .c-scnd{
+        flex-direction: column;
+    }
+
+    .c-frst > div, .c-scnd > div, .c-thrd > div{
+        flex: none;
+    }
+
+}

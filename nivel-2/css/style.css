@@ -1,0 +1,330 @@
+*{
+    font-family: 'Oswald', sans-serif;
+}
+main{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+/*
+Header Section
+*/
+header{
+    background: url("../images/header.jpg")no-repeat center center;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+
+/*
+Navbar
+*/
+
+.nav,.brand, .main-nav, .social-nav{
+    height: 55px;
+}
+
+.brand{
+    flex: 1 1 10%;
+}
+
+.brand img{
+    width: 50px;
+    height: 50px;
+}
+
+nav{
+    display: flex;
+    flex:1 1 90%;
+}
+
+
+nav > ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#666;
+    font-size: 1em;
+}
+nav ul li a:hover{
+    color:rgb(245, 93, 38);
+}
+
+
+
+nav > .main-nav{
+    flex: 1 1 70%;
+    justify-content: space-around;
+}
+
+nav > .social-nav{
+    flex: 1 1 30%;
+    justify-content: flex-end;
+}
+
+/*
+Navbar anchor Icons
+*/
+
+.home::before{
+    content: "\f015";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #aaa;
+}
+
+.routes:before{
+    content: "\f279";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #aaa;
+}
+
+.hotels:before{
+    content: "\f0fd";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #aaa;
+}
+
+.flights:before{
+    content: "\f072";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #aaa;
+}
+.contact:before{
+    content: "\f56c";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #aaa;
+}
+
+.facebook a{
+    margin-left: 10px;
+}
+.facebook:before{
+    content: "\f082";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #888;
+}
+
+.twitter:before{
+    content: "\f099";
+    font-family: "FontAwesome";
+    width: 20px;
+    height: 20px;
+    color: #888;
+}
+
+
+/*
+Banner HeaderInner Section
+*/
+
+.copy{
+    margin: auto;
+    width: 90%;
+    height: 180px;
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+    color: rgba(245, 93, 38,.8);
+}
+
+.copy h1{
+    font-size: 1.8em;
+}
+
+
+/*
+Articles Section
+*/
+
+.main-content{
+    display: flex;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    background-color: #bab8b8;
+    margin-right: 3px;
+}
+.title h3{
+    margin: 0;
+    background-color: rgba(196, 68, 68, 0.797);
+    padding-left: 3px;
+    padding-top: 4px;
+    color: white;
+    font-weight: 200;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.thumbnail > span{
+    margin-top: -30px;
+    margin-left: 4px;
+    color: antiquewhite;
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.excerpt{
+    display: flex;
+}
+.excerpt > p{
+    font-weight: 200;
+    flex: 1 1 50%;
+    margin: 2px 4px;
+}
+
+.read-more{
+    font-weight: 200;
+}
+
+.service{
+    padding: 20px;
+    text-align: center;
+}
+
+/*
+Aside Section
+*/
+
+
+article{
+    background-color: white;
+    flex:1 1 35%;
+    margin: 5px;
+    padding: 5px;
+}
+aside{
+    flex:1;
+    background-color: #bab8b8;
+    margin-left: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*
+Footer Section
+*/
+
+footer{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #bab8b8;
+    display: flex;
+    justify-content: center;
+   
+}
+.copyright{
+    width: 95%;
+    margin: auto;
+   text-align: center;
+   background-color: antiquewhite;
+}
+
+.copyright p{
+   margin: 10px;
+}
+
+
+
+@media screen and (max-width:768px){
+    nav ul li a{
+        font-size: .7em;
+    }
+
+    .copy h1{
+        font-size: 1.5em;
+    }
+
+    .articles{
+        margin: 0;
+    }
+    
+    .excerpt{
+        flex-direction: column;
+        padding: 20px;
+    }
+    aside{
+        margin: 10px 0 0;
+    }
+
+    .home::before,.routes:before,.hotels:before,.flights:before,.contact:before{
+      font-size: .6em;
+    }
+
+    .main-content{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:424px){
+    .main-nav{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .social-nav{
+        font-size: .8em;
+    }
+    article{
+        flex:1 1 100%;
+    }
+    article{
+     padding: 25px;
+    }
+    .copy{
+        height: 120px;
+    }
+    .copy h1{
+        font-size: 1.1em;
+    }
+    .title h3{
+        font-size: .9em;
+    }
+
+      .excerpt,aside, footer{
+          font-size: .9em;
+      }
+
+      .thumbnail{
+          padding-bottom: 20px;
+      }
+
+      .thumbnail > span{
+          font-size: .8em;
+      }
+
+
+}
