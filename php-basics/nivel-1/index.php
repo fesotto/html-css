@@ -54,8 +54,64 @@ echo '<h1><strong>'.
 'My Name is: ' .
 MY_NAME . 
 '</strong></h1>';
+echo '<br>';
+echo '<br>';
+
+//Exercise -4
+echo "Exercise -4";
+echo '<br>';
+echo '<br>';
+
+$x = 8;
+$y = 6;
+
+$n = 8.3;
+$m = 6.2;
+
+echo "X value: ". $x . '<br>';
+echo "Y value: ". $y . '<br>';
+echo '<br>';
+
+$suma_x_y = $x + $y;
+$rest_x_y = $x - $y;
+$multiply_x_y = $x * $y;
+$module_x_y = $x % $y;
+
+echo "Adding  x y: " . $suma_x_y . '<br>';
+echo "Resting  x y: " . $rest_x_y . '<br>';
+echo "Mulyiplying  x y: " . $multiply_x_y . '<br>';
+echo "Module  x y: " . $module_x_y . '<br>';
+echo '<br>';
+echo '<br>';
+
+echo "N value: ". $n . '<br>';
+echo "M value: ". $m . '<br>';
+echo '<br>';
+
+$suma_n_m = $n + $m;
+$rest_n_m = $n - $m;
+$multiply_n_m = $n * $m;
+$module_n_m = $n % $m;
+
+echo "Adding n m: " . $suma_n_m . '<br>';
+echo "Resting n m: " . $rest_n_m . '<br>';
+echo "Mulyiplying n m: " .$multiply_n_m . '<br>';
+echo "Module n m: " . $module_n_m . '<br>';
+echo '<br>';
 
 
+$double = 2;
+
+echo "Double x: " . $x * $double . '<br>';
+echo "Double y: " . $y * $double . '<br>';
+echo "Double n: " . $n * $double . '<br>';
+echo "Double m: " . $m * $double . '<br>';
+echo '<br>';
+
+$total_sum = $x + $y + $n + $m;
+echo "Total adding: " . $total_sum . '<br>';
+$total_multiply = $x * $y * $n * $m;
+echo "Total multiplying: " . $total_multiply . '<br>';
 
 
 
