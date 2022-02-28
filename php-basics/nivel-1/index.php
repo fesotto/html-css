@@ -43,6 +43,17 @@ echo '<br>';
 echo '<br>';
 
 
+//Exercise -3
+echo "Exercise -3";
+echo '<br>';
+echo '<br>';
+
+define('MY_NAME',"Jefferson Otto");
+
+echo '<h1><strong>'. 
+'My Name is: ' .
+MY_NAME . 
+'</strong></h1>';
 
 
 
