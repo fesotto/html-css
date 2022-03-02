@@ -112,8 +112,31 @@ $total_sum = $x + $y + $n + $m;
 echo "Total adding: " . $total_sum . '<br>';
 $total_multiply = $x * $y * $n * $m;
 echo "Total multiplying: " . $total_multiply . '<br>';
+echo '<br>';
+echo '<br>';
 
 
+//Exercise -5
+echo "Exercise -5";
+echo '<br>';
+echo '<br>';
+
+$array_integer_1 = array(4,30,19,1,32);
+$array_integer_2 = array(5,73,21);
+$array_integer_2[] = 4;
+
+
+$unic_array = array_merge($array_integer_1,$array_integer_2);
+echo '<br>';
+echo '<br>';
+
+echo "Total size array: " . count($unic_array);
+echo '<br>';
+echo '<br>';
+
+
+echo "Print all array elements: ";
+print_r($unic_array) ;
 
 
 
