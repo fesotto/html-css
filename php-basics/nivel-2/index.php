@@ -15,7 +15,7 @@ function sum($x,$y)
 //Exercise -1
 echo "Exercise -2";
 
-//Given a satring, make te last charachter first, and the first last. 
+//Given a string, make te last charachter first, and the first last. 
 function replace($string)
 { 
     $first = $string[0];
