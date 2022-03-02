@@ -37,3 +37,26 @@ repeate_values($my_array);
 echo '<br>';
 echo '<br>';
 
+
+//Exercise -3
+echo "Exercise -3";
+echo '<br>';
+
+
+$array_int = array(10,20,30,40,50);
+
+//Remove element from array by value
+ function remove_by_value($array,$value){
+    
+      foreach($array as $v){
+         if($value === $v){
+            $array = array_diff($array, array($v));
+         }
+      }
+      var_dump($array);
+}
+
+$val = 30;
+var_dump($array_int);
+remove_by_value($array_int,$val);
+
