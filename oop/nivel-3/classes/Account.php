@@ -6,7 +6,6 @@ class Account extends Message
     private $name;
     private $givenName;
     private $balance;
-    private $error = " ";
 
     /*
        For testing withdraw and deposit only let name and givenName as default empty
