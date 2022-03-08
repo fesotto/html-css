@@ -30,16 +30,6 @@ class Employee{
  
 }
 
-$mrJorge = new Employee();
-$mrJorge->initialize("Jorge", 9000);
-$mrJorge->taxesCheck();
-
-echo '<br>';
-
-$mrAstulfo = new Employee();
-$mrAstulfo->initialize("Astulfo", 5999);
-$mrAstulfo->taxesCheck();
-
 //Exercise -2
 echo "Exercise -2";
 echo '<br>';
@@ -100,14 +90,3 @@ class Rectangle extends Shape{
     }
 
 }
-
-
-$t = new Triangle(6, 30, "Area Triangulo ");
-$t->areaCalc();
-$t->printArea();
-
-echo '<br>';
-
-$r = new Rectangle(3,50.5, "Area Rectangulo ");
-$r->areaCalc();
-$r->printArea();
