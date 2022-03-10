@@ -25,5 +25,31 @@ olimipcs();
 echo '<br>';
 echo '<br>';
 
+//Exercise -2
+echo "Exercise -2";
+echo '<br>';
+
+
+//Phone call price
+function toPay($minutes)
+{ 
+     $to_pay = 0;
+     
+     if($minutes <= 3){
+      echo $to_pay += .10;
+    }else{
+      for($i = 4; $i <= $minutes; $i++){
+         $to_pay += .05; 
+      }
+      echo  $to_pay + .10 ;
+    }
+
+   
+
+}
+toPay(10);
+echo '<br>';
+echo '<br>';
+
 
 
