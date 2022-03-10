@@ -1,4 +1,4 @@
-<h1 style="text-align:center; margin:30px;">Functions & Control Structures Level 1</h1>
+<h1 style="text-align:center; margin:30px;">Functions & Control Structures Level 2</h1>
 
 <?php 
 
