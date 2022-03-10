@@ -20,15 +20,26 @@ class Employee{
 
     public function taxesCheck()
     {
-        if($this->salary > 6000){
+        if($this->salary >= 6000){
          echo $this->name . " pay taxes.";
-         return;
+         
+        }else{
+            echo $this->name . " does not pay taxes.";
         }
-        echo $this->name . " does not pay taxes.";
+        
     }
-
- 
 }
+
+$juanjo = new Employee();
+$juanjo->initialize("Juanjo", 5999);
+$juanjo->taxesCheck();
+echo '<br>';
+$tina = new Employee();
+$tina->initialize("Tina", 6001);
+$tina->taxesCheck();
+
+echo '<br>';
+echo '<br>';
 
 //Exercise -2
 echo "Exercise -2";
@@ -66,11 +77,16 @@ class Triangle extends Shape{
     }
     public function areaCalc()
     {
-         echo $this->title;
-         $this->area = ($this->width * $this->height) / 2;
+         print $this->title;
+         print $this->area = ($this->width * $this->height) / 2;
     
     }
 }
+
+$tri = new Triangle(1.5,33,"Area Triangulo ");
+$tri->areaCalc();
+echo '<br>';
+
 
 class Rectangle extends Shape{
 
@@ -84,9 +100,12 @@ class Rectangle extends Shape{
     }
     public function areaCalc()
     {
-         echo $this->title;
-         $this->area = $this->width * $this->height;
+         print $this->title;
+         print $this->area = $this->width * $this->height;
     
     }
 
 }
+
+$rectangle = new Rectangle(1.5,33,"Area Rectangle  ");
+$rectangle->areaCalc();
