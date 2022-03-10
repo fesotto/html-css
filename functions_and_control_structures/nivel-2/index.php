@@ -52,4 +52,38 @@ echo '<br>';
 echo '<br>';
 
 
+//Exercise -3
+echo "Exercise -3";
+
+
+//Calc chucherías
+function chucheShoping($n, $name)
+{ 
+   
+    switch ($name) {
+      
+       case 'chocolat':
+            $price = 1;
+           return  $price * $n;
+            break;
+        case 'chiclet':
+            $price = .50;
+           return  $price * $n;
+            break;
+        case 'candy':
+            $price = 1.50;
+           return  $price * $n;
+            break;
+   }
+   
+     
+}
+echo '<br>';
+$totalCandy = 
+chucheShoping(2,'candy') +
+chucheShoping(4,'chiclet') +
+chucheShoping(8,'chocolat') ;
+echo $totalCandy;
+
+
 
