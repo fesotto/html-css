@@ -21,10 +21,10 @@ class Employee{
     public function taxesCheck()
     {
         if($this->salary >= 6000){
-         echo $this->name . " pay taxes.";
+         print $this->name . " pay taxes.";
          
         }else{
-            echo $this->name . " does not pay taxes.";
+            print $this->name . " does not pay taxes.";
         }
         
     }
@@ -51,6 +51,7 @@ class Shape{
     protected $width;
     protected $height;
     protected $area;
+    private $title;
 
     public function __construct($width, $height) {
         $this->width = $width;
@@ -59,7 +60,9 @@ class Shape{
 
 
     public function printArea(){
-        echo $this->area;
+       
+        print $this->title;
+        print $this->area;
 
     }
 
@@ -67,45 +70,56 @@ class Shape{
 
 class Triangle extends Shape{
      
-    private $title;
-    
     public function __construct($width,$heigt,$title) {
         
         Shape::__construct($width,$heigt);
         $this->title = $title;
 
     }
-    public function areaCalc()
+    private function areaCalc()
     {
-         print $this->title;
-         print $this->area = ($this->width * $this->height) / 2;
+        
+         return $this->area = ($this->width * $this->height) / 2;
     
+    }
+
+    public function showResult()
+    {
+        print $this->title;
+        print$this->areaCalc();
+
     }
 }
 
 $tri = new Triangle(1.5,33,"Area Triangulo ");
-$tri->areaCalc();
+$tri->showResult();
 echo '<br>';
 
 
 class Rectangle extends Shape{
 
-    private $title;
-    
     public function __construct($width,$heigt,$title) {
         
         Shape::__construct($width,$heigt);
         $this->title = $title;
 
     }
-    public function areaCalc()
+    private function areaCalc()
     {
-         print $this->title;
-         print $this->area = $this->width * $this->height;
+        
+         return $this->area = $this->width * $this->height;
     
+    }
+
+
+    public function showResult()
+    {
+        print $this->title;
+        print $this->areaCalc();
+
     }
 
 }
 
 $rectangle = new Rectangle(1.5,33,"Area Rectangle  ");
-$rectangle->areaCalc();
+$rectangle->showResult();
