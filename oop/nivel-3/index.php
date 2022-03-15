@@ -1,3 +1,7 @@
+<?php
+  require_once 'routes.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +27,10 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6 d-flex justify-content-end mt-5">
-        <a type="button" class="btn btn-primary" href="/deposit.php">Depositar</a>
+        <a type="button" class="btn btn-primary" href="<?php echo url_for('/deposit.php'); ?>">Depositar</a>
       </div>
       <div class="col-12 col-md-6 d-flex justify-content-start mt-5">
-      <a type="button" class="btn btn-primary" href="/withdraw.php">Sacar</a>
+      <a type="button" class="btn btn-primary" href="<?php echo url_for('/withdraw.php'); ?>">Sacar</a>
         </div>
     </div>
   </div>

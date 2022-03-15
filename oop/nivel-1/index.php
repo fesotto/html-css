@@ -18,7 +18,7 @@ class Employee{
         $this->salary = $salary;
     }
 
-    public function taxesCheck()
+    public function print()
     {
         if($this->salary >= 6000){
          print $this->name . " pay taxes.";
@@ -32,11 +32,11 @@ class Employee{
 
 $juanjo = new Employee();
 $juanjo->initialize("Juanjo", 5999);
-$juanjo->taxesCheck();
+$juanjo->print();
 echo '<br>';
 $tina = new Employee();
 $tina->initialize("Tina", 6001);
-$tina->taxesCheck();
+$tina->print();
 
 echo '<br>';
 echo '<br>';

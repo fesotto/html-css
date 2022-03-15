@@ -49,11 +49,17 @@ class Account extends Message
         if(!isset($value) || trim($value) === ''){
         return  $this->message("Por favor introduce un valor", 'warning'); 
           }
+          
         
         if ($value > $this->balance) {
             $this->message('No funds.','warning');
             return;
         }
+
+        if ($value <= 0) {
+            $this->message('Cantidad tiene que ser maior que 0.', 'warning');
+            return;
+         }
 
 
          $this->withdraw($value);

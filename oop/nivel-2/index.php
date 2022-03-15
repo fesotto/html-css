@@ -8,7 +8,6 @@ class PokerDice{
     private $thrwonDice;    
     private $face;
     private static $totalThrows = 0;
-    private $totalTime;
 
 
     private function throw()

@@ -32,7 +32,7 @@
     <input type="text" name="deposit" class="form-control" >
   </div>
   <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Sacar</button>
+    <button type="submit" class="btn btn-primary mb-3">Depositar</button>
   </div>
   <div class="col-auto">
   <a type="button" class="btn btn-primary" href="/">Volver</a>
